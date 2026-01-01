@@ -1,0 +1,267 @@
+body {
+    background: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: red !important;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+    z-index: 1;
+    /* lower than overlay */
+}
+
+.heroVideo.active {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 49%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 5;
+}
+
+
+.hero-title {
+    font-size: 3rem;
+    color: red;
+    text-shadow: 0 0 10px red, 0 0 30px darkred;
+    opacity: 0;
+}
+
+.hero-sub {
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+.animate-title {
+    animation: titleAnim 1s ease forwards;
+}
+
+.animate-sub {
+    animation: subAnim 1s ease forwards;
+    animation-delay: .4s;
+}
+
+@keyframes titleAnim {
+    from {
+        opacity: 0;
+        transform: scale(.6)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes subAnim {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.hero-controls {
+    position: absolute;
+    top: 66%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 10;
+}
+
+.hero-controls button {
+    background: rgb(255 0 0 / 12%);
+    font-size: 28px;
+    padding: 12px 18px;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.hero-controls button:hover {
+    background: red;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 0;
+}
+
+.title {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* SERVICES */
+.card {
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+/* GALLERY */
+.gallery-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.gallery-track img,
+.gallery-track video {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .gallery-track>* {
+        flex: 0 0 33.333%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-track>* {
+        flex: 0 0 100%;
+        padding: 5px;
+    }
+}
+
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: red;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px 15px;
+    z-index: 5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-btn:hover {
+    background: darkred;
+}
+
+.gallery-btn.left {
+    left: 10px;
+}
+
+.gallery-btn.right {
+    right: 10px;
+}
+
+/* SOCIAL MEDIA */
+.social a {
+    color: red;
+    font-size: 26px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: white;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    border: 2px solid red;
+    padding: 30px;
+    border-radius: 15px;
+    background: #111;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #222;
+    border: 1px solid red;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.contact-form button {
+    background: red;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+
+ .animate-title {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

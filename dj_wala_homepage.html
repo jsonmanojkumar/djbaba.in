@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DJ Baba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo.png" alt="Logo">
+        <span style="font-size: 32px;
+    font-family: serif;"> DJ BABA </span>
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#contact">
+              <button type="submit" class="btn btn-danger w-100" style="background: red;">Contact Us</button>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <video class="heroVideo active" autoplay muted loop>
+      <source src="./assets/baba1.mp4">
+    </video>
+
+    <video class="heroVideo" autoplay muted loop>
+      <source src="./assets/baba2.mp4">
+    </video>
+
+    <video class="heroVideo" autoplay muted loop>
+      <source src="./assets/baba3.mp4">
+    </video>
+
+    <video class="heroVideo" autoplay muted loop>
+      <source src="./assets/baba4.mp4">
+    </video>
+
+    <div class="overlay">
+      <!-- <h1 id="heroTitle" class="hero-title">DJ BABA</h1> -->
+      <img id="heroTitle" style="height: 200px;" src="./assets/logo.png" alt="Logo">
+      <h3 id="heroSub" class="hero-sub">Wedding | Party | Event Booking</h3>
+      <!-- <button onclick="toggleSound()" id="soundBtn" style="margin-top:15px;"><i class="fa fa-volume-high"></i></button> -->
+    </div>
+
+    <div class="hero-controls">
+      <button onclick="prevVideo()"><i class="fa fa-chevron-left"></i></button>
+      <button onclick="nextVideo()"><i class="fa fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section bg-black">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h2 class="title">About DJ Baba</h2>
+          <p class="text-light">
+
+          <ul class="about-list">
+            <li>
+              <strong>DJ Baba</strong> is a professional DJ and event management service based in Saharanpur, known for
+              energetic music and well-organized events.
+            </li>
+            <li>
+              We specialize in weddings, parties, and corporate functions with high-quality sound systems and creative
+              lighting setups.
+            </li><br>
+            <li>
+              <strong>DJ Sound & Music Setup</strong> – Powerful DJ sound, live mixing, and full party vibes for every
+              celebration.
+            </li>
+            <li>
+              <strong>Lighting & Decoration</strong> – Stage lighting, home and venue decoration with theme-based
+              designs.
+            </li>
+            <li>
+              <strong>Catering Booking</strong> – Hygienic, delicious food services with customizable menus for all
+              events.
+            </li><br>
+            <li>
+              Our focus is on quality service, timely setup, and complete customer satisfaction to make your event
+              unforgettable.
+            </li>
+          </ul>
+
+          </p>
+          <p class="text-light">
+            Our goal is simple – <span class="text-danger fw-bold">make your event legendary</span>.
+          </p>
+          <div class="social mt-3">
+            <a href="https://www.instagram.com/dj_baba_tajpura_saharanpur/" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="tel:9758646066"><i class="fa fa-phone"></i></a>
+            <a href="https://wa.me/919758646066"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/vickyraja.vickyraja.988" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/baba.png" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="title text-center animate-title ">Our Services</h2>
+      <div class="row g-4 text-center">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card bg-black border-danger text-white p-3">
+            <i class="fa fa-music fa-4x text-danger mb-3"></i>
+            <h5>DJ Sound</h5>
+            <p>
+              We provide complete DJ and lighting solutions for weddings and events.
+              High-energy DJ music with professional sound system.
+              Advanced laser lights, LED dance floor, and special effects available.
+              Custom lighting designed as per your stage and event theme.
+              Perfect setup to create a powerful and unforgettable party atmosphere.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card bg-black border-danger text-white p-3">
+            <i class="fa fa-lightbulb fa-4x text-danger mb-3"></i>
+            <h5>Lighting Decoration</h5>
+            <p>
+              We provide beautiful home decoration services for weddings and functions.
+              Ganglow (tent) decoration with attractive designs and quality materials.
+              Floral, fabric, and theme-based decorations available.
+              Decoration customized according to your event and space.
+              Make your home and venue elegant, colorful, and welcoming.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card bg-black border-danger text-white p-3">
+            <i class="fa fa-utensils fa-4x text-danger mb-3"></i>
+            <h5>Catering Booking</h5>
+            <p>
+              We provide professional catering booking services for all types of events.
+              Wide range of food options including vegetarian and non-vegetarian menus.
+              Fresh, hygienic food prepared by experienced chefs.
+              Menu customization available as per your event and budget.
+              Quality service and delicious taste to satisfy all your guests.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section bg-dark">
+    <div class="container">
+      <h2 class="title text-center">Gallery</h2>
+
+      <div class="gallery-slider">
+        <button class="gallery-btn left" onclick="prevGallery()">❮</button>
+        <div class="gallery-track" id="galleryTrack">
+
+
+          <img src="./assets/baba.png">
+          <img src="./assets/g1.jpg">
+          <img src="./assets/g2.jpeg">
+          <img src="./assets/g3.jpeg">
+          <img src="./assets/g4.jpeg">
+
+        </div>
+        <button class="gallery-btn right" onclick="nextGallery()">❯</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="title text-center">Contact Us</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-6">
+          <form class="p-4 border rounded text-white needs-validation" id="contactForm" novalidate>
+
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" placeholder="Enter your name" required class="form-control">
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="mb-3">
+              <label for="mobile" class="form-label">Mobile</label>
+              <input type="tel" id="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" maxlength="10"
+                minlength="10" required class="form-control">
+              <div class="invalid-feedback">
+                Please enter a valid 10-digit mobile number.
+              </div>
+            </div>
+
+            <!-- Service Dropdown -->
+            <div class="mb-3">
+              <label for="service" class="form-label">Select Service</label>
+              <select id="service" class="form-select" required>
+                <option value="DJ Service" selected>DJ Service</option>
+                <option value="Lighting">Lighting</option>
+                <option value="Catering">Catering Booking</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a service.
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" rows="4" placeholder="Enter your message" required class="form-control"></textarea>
+              <div class="invalid-feedback">
+                Please enter your message.
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-danger w-100" style="background: red;">Send via WhatsApp</button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d534.109980236071!2d77.59810770321315!3d30.083643949937027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1767257489111!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="text-center p-3 bg-black">
+    © DJ Baba | Owner Vickey
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"> </script>
+
+</body>
+
+</html>
